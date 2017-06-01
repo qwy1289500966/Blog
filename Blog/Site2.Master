@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Blog.Site2" %>
+
+<%@ Register src="Controls/User.ascx" tagname="User" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="outer">
+        <div id="inner">
+            <div id="header">
+                <h1>
+                    我 的 博 客</h1>
+            </div>
+            <div id="splash">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="first">
+                        <uc1:User ID="User1" runat="server" /></li>
+                    <li><a href="Photo.aspx">相 册</a></li>
+                    <li><a href="Blog.aspx">日 志</a></li>
+                    <li><a href="Manage/Message.aspx">留 言</a></li>
+                    <li><a href="Manage/Login.aspx">管理登录</a>&nbsp;<a href="Register.aspx">注 册</a></li>
+                </ul>
+            </div>
+            <div id="date">
+                访问量：<%=Application["num"] %></div>
+        </div>
+        <div id="primarycontent">
+            <asp:ContentPlaceHolder ID="Right" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="secondcontent">
+            <asp:ContentPlaceHolder ID="Left" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            &copy;My Blog<a href="/"></a></div>
+    </div>
+    </form>
+</body>
+</html>

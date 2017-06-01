@@ -1,0 +1,5 @@
+D:\TEST\Blog\Blog\bin\Blog.dll
+D:\TEST\Blog\Blog\bin\Blog.pdb
+D:\TEST\Blog\Blog\obj\Debug\Blog.csprojResolveAssemblyReference.cache
+D:\TEST\Blog\Blog\obj\Debug\Blog.dll
+D:\TEST\Blog\Blog\obj\Debug\Blog.pdb
