@@ -9,13 +9,14 @@
             <div id="c-right">
                 <div class="Page">
                     <h3>
-                        <a href='<%#Eval("new_id","Next.aspx?id={0}") %>'target="_blank"><%#Eval("Title") %></a>
+                        <a href='<%#Eval("new_id","Next.aspx?id={0}") %>' target="_blank">
+                            <%#Eval("Title") %></a>
                     </h3>
                     <div class="content">
                         <p class="botime">
                             <%#Eval("AddDate") %></p>
-                        <p class="bod">
-                            <%#Eval("Body").ToString() %></p>
+                        <p class="bod" <%#BindBody(Eval("Body").ToString()) %>>
+                        </p>
                     </div>
                     <div>
                         <div class="footer">

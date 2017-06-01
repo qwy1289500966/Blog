@@ -67,6 +67,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BlogDataClasses.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -96,7 +103,49 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Manage\Hou.aspx.cs">
+      <DependentUpon>Hou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Hou.aspx.designer.cs">
+      <DependentUpon>Hou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\Message.aspx.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage\Message.aspx.designer.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Next.aspx.cs">
+      <DependentUpon>Next.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Next.aspx.designer.cs">
+      <DependentUpon>Next.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Photo.aspx.cs">
+      <DependentUpon>Photo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Photo.aspx.designer.cs">
+      <DependentUpon>Photo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site2.Master.cs">
       <DependentUpon>Site2.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -104,13 +153,24 @@
     <Compile Include="Site2.Master.designer.cs">
       <DependentUpon>Site2.Master</DependentUpon>
     </Compile>
+    <Compile Include="WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Blog.aspx" />
     <Content Include="Controls\LeftList.ascx" />
     <Content Include="Controls\User.ascx" />
     <Content Include="First Page.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Manage\Hou.aspx" />
+    <Content Include="Manage\Login.aspx" />
+    <Content Include="Manage\Message.aspx" />
+    <Content Include="Next.aspx" />
+    <Content Include="Photo.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -131,6 +191,7 @@
     <Content Include="Scripts\MicrosoftMvcValidation.js" />
     <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\Web.config" />
+    <Content Include="WebService.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
